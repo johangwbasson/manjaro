@@ -1,5 +1,6 @@
 [/]
 alttab-switcher-delay=100
+alttab-switcher-style='icons+preview'
 applet-cache-updated=1606565147
 command-history=['xterm']
 desktop-effects-close-effect='traditional'
@@ -23,17 +24,21 @@ desktop-effects-unmaximize-effect='none'
 desktop-effects-unmaximize-time=100
 desktop-effects-unmaximize-transition='easeNone'
 enable-vfade=false
-enabled-applets=['panel1:right:6:notifications@cinnamon.org:6', 'panel1:left:0:workspace-switcher@cinnamon.org:7', 'panel1:right:8:windows-quick-list@cinnamon.org:8', 'panel1:right:9:separator@cinnamon.org:9', 'panel1:right:10:systray@cinnamon.org:10', 'panel1:right:11:separator@cinnamon.org:11', 'panel1:right:12:removable-drives@cinnamon.org:12', 'panel1:right:13:network@cinnamon.org:13', 'panel1:right:14:sound@cinnamon.org:14', 'panel1:right:15:power@cinnamon.org:15', 'panel1:right:16:inhibit@cinnamon.org:16', 'panel1:center:0:calendar@cinnamon.org:17', 'panel1:right:18:user@cinnamon.org:18', 'panel1:left:2:workspace-name@willurd:20', 'panel1:left:1:spacer@cinnamon.org:23']
-next-applet-id=25
+enabled-applets=['panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:2:workspace-switcher@cinnamon.org:7', 'panel1:right:4:windows-quick-list@cinnamon.org:8', 'panel1:right:5:separator@cinnamon.org:9', 'panel1:right:6:systray@cinnamon.org:10', 'panel1:right:7:separator@cinnamon.org:11', 'panel1:right:8:removable-drives@cinnamon.org:12', 'panel1:right:9:network@cinnamon.org:13', 'panel1:right:10:sound@cinnamon.org:14', 'panel1:right:11:power@cinnamon.org:15', 'panel1:right:12:inhibit@cinnamon.org:16', 'panel1:center:0:calendar@cinnamon.org:17', 'panel1:right:13:user@cinnamon.org:18', 'panel1:left:0:menu@cinnamon.org:27', 'panel2:center:0:grouped-window-list@cinnamon.org:29']
+enabled-extensions=['!smart-panel@mohammad-sn']
+extension-cache-updated=1606622437
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+next-applet-id=30
 panel-edit-mode=false
-panel-zone-icon-sizes='[{"panelId": 1, "left": 32, "center": 0, "right": 24}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panel-zone-icon-sizes='[{"panelId":1,"left":32,"center":0,"right":24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":28,"center":28,"right":16}]'
 panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
-panels-autohide=['1:false', '2:false']
+panels-autohide=['1:false', '2:intel']
 panels-enabled=['1:0:top']
-panels-height=['1:30', '2:40']
+panels-height=['1:30', '2:48']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
+prevent-focus-stealing=true
 startup-animation=false
 workspace-osd-visible=false
 
@@ -52,7 +57,7 @@ image-source='directory:///home/johan/archo'
 
 [desktop/interface]
 cursor-blink-time=1200
-font-name='Noto Sans 10'
+font-name='Source Sans Pro 10'
 gtk-theme='Adapta-Nokto-Maia'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
@@ -148,6 +153,9 @@ switch-to-workspace-9=['<Super>9']
 [desktop/media-handling]
 autorun-never=false
 
+[desktop/notifications]
+remove-old=true
+
 [desktop/sound]
 event-sounds=false
 
@@ -155,11 +163,12 @@ event-sounds=false
 min-window-opacity=30
 num-workspaces=9
 theme='Adapta-Nokto-Maia'
-titlebar-font='Noto Sans 10'
+titlebar-font='Source Sans Pro 10'
 workspace-names=['WWW', 'Code', 'Dev', 'Terminal', 'Chrome', 'Spotify', 'Misc', 'Opt', 'Personal']
 
 [muffin]
 desktop-effects=false
+placement-mode='center'
 resize-threshold=24
 tile-hud-threshold=25
 workspace-cycle=true
@@ -168,6 +177,12 @@ workspaces-only-on-primary=false
 [settings-daemon/peripherals/keyboard]
 delay=uint32 500
 repeat-interval=uint32 30
+
+[settings-daemon/plugins/power]
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
 
 [theme]
 name='Adapta-Nokto-Maia'
