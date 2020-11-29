@@ -1,0 +1,32 @@
+# Keyboard Shortcuts
+
+Switch Workspaces:              Super + <Num> 
+Move window to workspace:       Super + Shift + <Num>
+Maximize Window:                Super + Ctrl + M
+Minimize Window:                Super + Ctrl + N
+
+
+## Launch
+
+Chromium                        Super + h
+Firefox                         Super + f
+Chrome                          Super + g
+Skype                           Super + y
+Spotify                         Super + s
+Intellij Idea                   Super + i
+Virtualbox                      Super + v
+Code                            Super + c
+File Manager / Nemo             Super + e
+
+## Termite
+
+Copy                            Ctrl + Shift + C
+Paste                           Ctrl + Shift + V 
+
+## Spacemacs
+
+### Clojure
+
+Start repl:                     , '
+Eval current expression:        , e f
+Restart Repl:                   , m q r

@@ -1,0 +1,173 @@
+[/]
+alttab-switcher-delay=100
+applet-cache-updated=1606565147
+command-history=['xterm']
+desktop-effects-close-effect='traditional'
+desktop-effects-close-time=120
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-map-effect='traditional'
+desktop-effects-map-time=100
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-effect='none'
+desktop-effects-maximize-time=100
+desktop-effects-maximize-transition='easeInExpo'
+desktop-effects-minimize-effect='traditional'
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-on-dialogs=false
+desktop-effects-on-menus=false
+desktop-effects-tile-effect='none'
+desktop-effects-tile-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-unmaximize-effect='none'
+desktop-effects-unmaximize-time=100
+desktop-effects-unmaximize-transition='easeNone'
+enable-vfade=false
+enabled-applets=['panel1:right:6:notifications@cinnamon.org:6', 'panel1:left:0:workspace-switcher@cinnamon.org:7', 'panel1:right:8:windows-quick-list@cinnamon.org:8', 'panel1:right:9:separator@cinnamon.org:9', 'panel1:right:10:systray@cinnamon.org:10', 'panel1:right:11:separator@cinnamon.org:11', 'panel1:right:12:removable-drives@cinnamon.org:12', 'panel1:right:13:network@cinnamon.org:13', 'panel1:right:14:sound@cinnamon.org:14', 'panel1:right:15:power@cinnamon.org:15', 'panel1:right:16:inhibit@cinnamon.org:16', 'panel1:center:0:calendar@cinnamon.org:17', 'panel1:right:18:user@cinnamon.org:18', 'panel1:left:2:workspace-name@willurd:20', 'panel1:left:1:spacer@cinnamon.org:23']
+next-applet-id=25
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId": 1, "left": 32, "center": 0, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:top']
+panels-height=['1:30', '2:40']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+startup-animation=false
+workspace-osd-visible=false
+
+[desktop/applications/calculator]
+exec='galculator'
+
+[desktop/applications/terminal]
+exec='termite'
+
+[desktop/background]
+picture-uri='file:///home/johan/archo/arco-login.jpg'
+
+[desktop/background/slideshow]
+delay=15
+image-source='directory:///home/johan/archo'
+
+[desktop/interface]
+cursor-blink-time=1200
+font-name='Noto Sans 10'
+gtk-theme='Adapta-Nokto-Maia'
+scaling-factor=uint32 0
+text-scaling-factor=1.0
+
+[desktop/keybindings]
+custom-list=['custom10', 'custom7', 'custom6', 'custom5', 'custom4', 'custom3', 'custom2', 'custom1', '__dummy__', 'custom0', 'custom8', 'custom9']
+show-desklets=@as []
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>grave']
+command='rofi -show drun -show-icons'
+name='Rofi Run'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>h']
+command='/usr/bin/chromium'
+name='Chromium'
+
+[desktop/keybindings/custom-keybindings/custom10]
+binding=['<Super>Return']
+command='/usr/bin/termite'
+name='Termite'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>f']
+command='/usr/bin/firefox'
+name='Firefox'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>g']
+command='/usr/bin/google-chrome-stable'
+name='Chrome'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Super>y']
+command='/usr/bin/skypeforlinux'
+name='Skype'
+
+[desktop/keybindings/custom-keybindings/custom5]
+binding=['<Super>s']
+command='/var/lib/snapd/snap/bin/spotify'
+name='Spotify'
+
+[desktop/keybindings/custom-keybindings/custom6]
+binding=['<Super>i']
+command='/opt/idea-IU/bin/idea.sh'
+name='Intellij Idea Ultimate'
+
+[desktop/keybindings/custom-keybindings/custom7]
+binding=['<Super>v']
+command='/usr/bin/virtualbox'
+name='Virtualbox'
+
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['<Super>e']
+command='/usr/bin/nemo'
+name='Nemo'
+
+[desktop/keybindings/custom-keybindings/custom9]
+binding=['<Super>c']
+command='/usr/bin/code'
+name='Code'
+
+[desktop/keybindings/media-keys]
+home=['XF86Explorer']
+screensaver=['<Shift><Super>l', 'XF86ScreenSaver']
+
+[desktop/keybindings/wm]
+close=['<Shift><Super>q']
+maximize=['<Primary><Super>m']
+minimize=['<Primary><Super>n']
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-10=['<Shift><Super>parenright']
+move-to-workspace-2=['<Shift><Super>at']
+move-to-workspace-3=['<Shift><Super>numbersign']
+move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-5=['<Shift><Super>percent']
+move-to-workspace-6=['<Shift><Super>asciicircum']
+move-to-workspace-7=['<Shift><Super>ampersand']
+move-to-workspace-8=['<Shift><Super>asterisk']
+move-to-workspace-9=['<Shift><Super>parenleft']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-10=['<Super>0']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+switch-to-workspace-7=['<Super>7']
+switch-to-workspace-8=['<Super>8']
+switch-to-workspace-9=['<Super>9']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+min-window-opacity=30
+num-workspaces=9
+theme='Adapta-Nokto-Maia'
+titlebar-font='Noto Sans 10'
+workspace-names=['WWW', 'Code', 'Dev', 'Terminal', 'Chrome', 'Spotify', 'Misc', 'Opt', 'Personal']
+
+[muffin]
+desktop-effects=false
+resize-threshold=24
+tile-hud-threshold=25
+workspace-cycle=true
+workspaces-only-on-primary=false
+
+[settings-daemon/peripherals/keyboard]
+delay=uint32 500
+repeat-interval=uint32 30
+
+[theme]
+name='Adapta-Nokto-Maia'
