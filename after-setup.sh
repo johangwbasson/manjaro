@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Setup powerline for zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+# Setup Zinit
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
 # Restore dot files
 yadm clone git@github.com:johangwbasson/dotfiles.git  
