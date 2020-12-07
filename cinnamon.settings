@@ -24,18 +24,19 @@ desktop-effects-unmaximize-effect='none'
 desktop-effects-unmaximize-time=100
 desktop-effects-unmaximize-transition='easeNone'
 enable-vfade=false
-enabled-applets=['panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:2:workspace-switcher@cinnamon.org:7', 'panel1:right:4:windows-quick-list@cinnamon.org:8', 'panel1:right:5:separator@cinnamon.org:9', 'panel1:right:6:systray@cinnamon.org:10', 'panel1:right:7:separator@cinnamon.org:11', 'panel1:right:8:removable-drives@cinnamon.org:12', 'panel1:right:9:network@cinnamon.org:13', 'panel1:right:10:sound@cinnamon.org:14', 'panel1:right:11:power@cinnamon.org:15', 'panel1:right:12:inhibit@cinnamon.org:16', 'panel1:center:0:calendar@cinnamon.org:17', 'panel1:right:13:user@cinnamon.org:18', 'panel1:left:0:menu@cinnamon.org:27', 'panel2:center:0:grouped-window-list@cinnamon.org:29']
+enabled-applets=['panel1:right:3:notifications@cinnamon.org:6', 'panel1:left:0:workspace-switcher@cinnamon.org:7', 'panel1:right:4:windows-quick-list@cinnamon.org:8', 'panel1:right:5:separator@cinnamon.org:9', 'panel1:right:6:systray@cinnamon.org:10', 'panel1:right:7:separator@cinnamon.org:11', 'panel1:right:8:removable-drives@cinnamon.org:12', 'panel1:right:9:network@cinnamon.org:13', 'panel1:right:10:sound@cinnamon.org:14', 'panel1:right:11:power@cinnamon.org:15', 'panel1:right:12:inhibit@cinnamon.org:16', 'panel1:center:0:calendar@cinnamon.org:17', 'panel1:right:13:user@cinnamon.org:18']
+enabled-desklets=@as []
 enabled-extensions=['!smart-panel@mohammad-sn']
 extension-cache-updated=1606622437
 hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 next-applet-id=30
 panel-edit-mode=false
-panel-zone-icon-sizes='[{"panelId":1,"left":32,"center":0,"right":24}]'
-panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":28,"center":28,"right":16}]'
+panel-zone-icon-sizes='[{"panelId": 1, "left": 24, "center": 0, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 24, "right": 16}]'
 panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
 panels-autohide=['1:false', '2:intel']
 panels-enabled=['1:0:top']
-panels-height=['1:30', '2:48']
+panels-height=['1:24', '2:48']
 panels-hide-delay=['1:0', '2:0']
 panels-show-delay=['1:0', '2:0']
 prevent-focus-stealing=true
@@ -46,7 +47,7 @@ workspace-osd-visible=false
 exec='galculator'
 
 [desktop/applications/terminal]
-exec='termite'
+exec='gnome-terminal'
 
 [desktop/background]
 picture-uri='file:///home/johan/archo/arco-login.jpg'
@@ -57,29 +58,36 @@ image-source='directory:///home/johan/archo'
 
 [desktop/interface]
 cursor-blink-time=1200
-font-name='Source Sans Pro 10'
+font-name='Liberation Sans 10'
 gtk-theme='Adapta-Nokto-Maia'
 scaling-factor=uint32 0
 text-scaling-factor=1.0
+toolkit-accessibility=false
 
 [desktop/keybindings]
-custom-list=['custom10', 'custom7', 'custom6', 'custom5', 'custom4', 'custom3', 'custom2', 'custom1', '__dummy__', 'custom0', 'custom8', 'custom9']
+custom-list=['custom11', 'custom1', 'custom9', 'custom8', 'custom0', '__dummy__', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom10']
+looking-glass-keybinding=@as []
 show-desklets=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
-binding=['<Super>grave']
+binding=['<Super>p']
 command='rofi -show drun -show-icons'
 name='Rofi Run'
 
 [desktop/keybindings/custom-keybindings/custom1]
-binding=['<Super>h']
-command='/usr/bin/chromium'
-name='Chromium'
+binding=['<Super>w']
+command='rofi -show windowcd'
+name='Rofi Windows'
 
 [desktop/keybindings/custom-keybindings/custom10]
 binding=['<Super>Return']
 command='/usr/bin/termite'
 name='Termite'
+
+[desktop/keybindings/custom-keybindings/custom11]
+binding=['<Super>v']
+command='/usr/bin/vivaldi-stable'
+name='Vivalid'
 
 [desktop/keybindings/custom-keybindings/custom2]
 binding=['<Super>f']
@@ -107,7 +115,7 @@ command='/opt/idea-IU/bin/idea.sh'
 name='Intellij Idea Ultimate'
 
 [desktop/keybindings/custom-keybindings/custom7]
-binding=['<Super>v']
+binding=['<Super>b']
 command='/usr/bin/virtualbox'
 name='Virtualbox'
 
@@ -123,10 +131,11 @@ name='Code'
 
 [desktop/keybindings/media-keys]
 home=['XF86Explorer']
-screensaver=['<Shift><Super>l', 'XF86ScreenSaver']
+screensaver=['<Super>l', 'XF86ScreenSaver']
+video-outputs=['XF86Display']
 
 [desktop/keybindings/wm]
-close=['<Shift><Super>q']
+close=['<Shift><Super>c']
 maximize=['<Primary><Super>m']
 minimize=['<Primary><Super>n']
 move-to-workspace-1=['<Shift><Super>exclam']
@@ -163,8 +172,8 @@ event-sounds=false
 min-window-opacity=30
 num-workspaces=9
 theme='Adapta-Nokto-Maia'
-titlebar-font='Source Sans Pro 10'
-workspace-names=['WWW', 'Code', 'Dev', 'Terminal', 'Chrome', 'Spotify', 'Misc', 'Opt', 'Personal']
+titlebar-font='Liberation Sans 10'
+workspace-names=['1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 [muffin]
 desktop-effects=false
